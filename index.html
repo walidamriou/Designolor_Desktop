@@ -234,8 +234,8 @@ mdl-layout--fixed-tabs">
         let Fluent_color_arr = ['#767676','#7A7574','#0099BC','#0078D7','E74856','FFB900','4C4A48','5D5A58','2D7D9A','0063B1','E81123','FF8C00']
         let Fluent_buttons = 20
         for (let index = 0; index < Fluent_buttons; index++) {
-          let element = document.createElement("button").bgcolor=Fluent_color_arr[0]
-          element.appendChild(document.createTextNode("Click Me!"))
+          let element = document.createElement("button")
+          element.appendChild(document.createTextNode(Fluent_color_arr[index]))
           //element.bgcolor=Fluent_color_arr[0]
           let page = document.getElementById("color_space1")
           page.appendChild(element);
