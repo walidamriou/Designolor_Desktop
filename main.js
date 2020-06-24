@@ -63,7 +63,7 @@ mainWindow.webContents.on("new-window", function(event, url) {
   //shell.openExternal(url);
 });
 
-  //mainWindow.setMenuBarVisibility(false)
+  mainWindow.setMenuBarVisibility(false)
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
