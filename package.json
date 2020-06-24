@@ -1,0 +1,37 @@
+{
+  "name": "Designolor",
+  "version": "1.0.0",
+  "description": "a desktop app that gives you access to beautiful color palettes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux snap",
+    "dist_win32": "electron-builder --win --ia32 ",
+    "dist_win64": "electron-builder --win --x64 ",
+    "dist_mac": "electron-builder --mac"
+  },
+  "repository": "https://github.com/walidamriou/Designolor",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Walid Amriou",
+  "license": "AGPL-3.0",
+  "build": {
+    "icon": "./img/project_logo.png"
+  },
+  "devDependencies": {
+    "electron": "^9.0.5",
+    "electron-builder": "^22.7.0",
+    "electron-installer-debian": "^3.0.0",
+    "electron-packager": "^14.2.1"
+  },
+  "dependencies": {
+    "electron-json-storage": "^4.1.8",
+    "node-localstorage": "^2.1.6",
+    "universal-analytics": "^0.4.20"
+  }
+}
