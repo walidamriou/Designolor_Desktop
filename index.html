@@ -192,6 +192,10 @@ mdl-layout--fixed-tabs">
       <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
         <div class="page-content">
           <!-- Your content goes here -->
+
+          <div id="color_space1">
+          </div>
+
         </div>
       </section>
       <section class="mdl-layout__tab-panel" id="fixed-tab-2">
@@ -224,6 +228,23 @@ mdl-layout--fixed-tabs">
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+    <script>
+      function createButton() {
+        let Fluent_color_arr = ['#767676','#7A7574','#0099BC','#0078D7','E74856','FFB900','4C4A48','5D5A58','2D7D9A','0063B1','E81123','FF8C00']
+        let Fluent_buttons = 20
+        for (let index = 0; index < Fluent_buttons; index++) {
+          let element = document.createElement("button").bgcolor=Fluent_color_arr[0]
+          element.appendChild(document.createTextNode("Click Me!"))
+          //element.bgcolor=Fluent_color_arr[0]
+          let page = document.getElementById("color_space1")
+          page.appendChild(element);
+          console.log(element);          
+        }
+
+      }
+      createButton();
+    </script>
 </body>
 
 </html>
