@@ -24,7 +24,7 @@
     "icon": "./img/project_logo.png"
   },
   "devDependencies": {
-    "electron": "^9.0.5",
+    "electron": "^9.3.0",
     "electron-builder": "^22.7.0",
     "electron-installer-debian": "^3.0.0",
     "electron-packager": "^14.2.1"
